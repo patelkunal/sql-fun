@@ -3,7 +3,8 @@ create table Apartments
   AptId int(4) AUTO_INCREMENT,
   AptNo int(3),
   BuildingId int(2),
-  PRIMARY KEY (AptId) 
+  PRIMARY KEY (AptId),
+  FOREIGN KEY (BuildingId) REFERENCES Buildings(BuildingId)
 );
 
 create table Buildings
